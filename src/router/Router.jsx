@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router-dom";
+import { Page404 } from "../../Page404";
 import { Home } from "../home";
 import { Page3 } from "../Page3";
 import { page1Routes } from "./Page1Routes";
@@ -41,8 +42,8 @@ export const Router = () => {
           </Switch>
         )}
       ></Route>
-      <Route path="/page3">
-        <Page3 />
+      <Route path="*">
+        <Page404 />
       </Route>
     </Switch>
   );
